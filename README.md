@@ -5,7 +5,7 @@ Procedural tree creation library
     
 ### Usage ###
 	
-Mesh creation, GLGE example:
+Mesh creation, GLGE(https://github.com/supereggbert/GLGE) example:
 ```html
 <script>
 	var myTree = new Tree({
@@ -39,11 +39,11 @@ Mesh creation, GLGE example:
 		Faces: Tree.flattenArray(myTree.Faces),
 	});
 
-	var twigMesh = new GLGE.Mesh(
+	var twigMesh = new GLGE.Mesh({
 		Positions: Tree.flattenArray(myTree.vertsTwig),
 		Normals: Tree.flattenArray(myTree.normalsTwig),
 		UV: Tree.flattenArray(myTree.uvsTwig),
 		Faces: Tree.flattenArray(myTree.facesTwig),
-	);
+	});
 </script>
 ```
