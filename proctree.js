@@ -501,5 +501,15 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 		return addVec(vector,change);
 	};
 	
+    Tree.flattenArray=function(input){
+        var retArray=[];
+    	for(var i=0;i<input.length;i++){
+    		for(var j=0;j<input[i].length;j++){
+    			retArray.push(input[i][j]);
+    		}
+    	}
+    	return retArray;
+    }
+    
 	window.Tree=Tree;
 })(window);
